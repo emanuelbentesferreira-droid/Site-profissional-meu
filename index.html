@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emanuel Bentes Ferreira - Currículo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- AVISO DO ADBLOCK (meme). Para tirar, apague esta div inteira. -->
+  <div id="aviso">
+    <div class="caixa">
+      <h2>AdBlock detectado!</h2>
+      <p>Desative o AdBlock para continuar acessando o site.</p>
+      <button onclick="document.getElementById('aviso').style.display = 'none'">Já desativei</button>
+    </div>
+  </div>
+
+  <!-- Cabeçalho com efeito paralax (imagem fixa: fundo.jpg) -->
+  <header class="cabecalho">
+    <h1>Emanuel Bentes Ferreira</h1>
+    <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+  </header>
+
+  <nav class="menu">
+    <a href="#sobre">Sobre mim</a>
+    <a href="#formacao">Formação</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contato">Contato</a>
+    <button id="btnTema">🌙 Modo Escuro</button>
+  </nav>
+
+  <main>
+
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <img src="foto.jpg" alt="Foto de Emanuel Bentes Ferreira" class="foto">
+      <p>
+        Meu nome é Emanuel Bentes Ferreira e estou no 2º semestre do curso de
+        Análise e Desenvolvimento de Sistemas (ADS) na Estácio de Castanhal.
+      </p>
+      <p>
+        Antes da faculdade, fiz cursos de informática em 2016 e 2021. Agora estou
+        aprendendo HTML e CSS e este site é uma atividade que estou fazendo na
+        faculdade.
+      </p>
+    </section>
+
+    <section id="formacao">
+      <h2>Formação</h2>
+
+      <h3>Análise e Desenvolvimento de Sistemas - Estácio Castanhal</h3>
+      <p class="data">2026 - em andamento (2º semestre)</p>
+
+      <h3>Treinamento Profissional em Informática - Cedaspy, Belém/PA</h3>
+      <p class="data">Concluído em 31 de agosto de 2021 - 480 horas/aula</p>
+      <p>
+        Disciplinas: Plataforma Web I e II, Office I e II, Design Gráfico I,
+        Desenvolvimento de Sites, Montagem e Manutenção, Photoshop,
+        Desenvolvimento de Jogos, Marketing Digital I e II e Projeto Final.
+      </p>
+
+      <h3>Informática Básica e Avançada - Líder Cursos, Curuçá/PA</h3>
+      <p class="data">Concluído em 12/06/2016 - 85 horas - média final 9,8</p>
+      <p>
+        Windows, PowerPoint, Word, Internet, Excel, Informática Avançada,
+        Mala Direta, Secretariado e Contabilidade.
+      </p>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiência</h2>
+      <p>Ainda não tenho experiência profissional na área de tecnologia.</p>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <p>
+        <strong>Este currículo online.</strong> Feito só com HTML e CSS, como
+        atividade da faculdade, e publicado no GitHub Pages.
+      </p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Windows, Word, Excel e PowerPoint</li>
+        <li>Noções de Photoshop e design gráfico</li>
+        <li>Noções de montagem e manutenção de computadores</li>
+        <li>Noções de marketing digital</li>
+        <li>HTML e CSS (aprendendo)</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <ul>
+        <li>E-mail: <a href="mailto:seuemail@exemplo.com">emanuelbentesferreira@gmail.com</a></li>
+        <li>Telefone: (91) 98169-7301</li>
+        <li>GitHub: <a href="https://github.com/seu-usuario" target="_blank">github.com/seu-usuario</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Emanuel Bentes Ferreira - 2026</p>
+  </footer>
+
+  <script>
+    // MODO ESCURO
+    document.getElementById("btnTema").addEventListener("click", function () {
+      document.body.classList.toggle("dark");
+      if (document.body.classList.contains("dark")) {
+        this.textContent = "☀️ Modo Claro";
+      } else {
+        this.textContent = "🌙 Modo Escuro";
+      }
+    });
+  </script>
+</body>
+</html>
